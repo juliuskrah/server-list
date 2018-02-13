@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Ding
+  data:
+    mongodb:
+      uri: mongodb://stladmin:${spring.data.mongodb.password}@localhost:27017/servers-list?authSource=servers-list
+      password: ENC(UKXEXZQLHSFukqCQMJv8cvDeo9fQHoWj)
+      # authentication-database: servers-list
+      # database: servers-list
+      # username: stladmin
+jasypt:
+  encryptor:
+    password: ${JASYPT_ENC}
